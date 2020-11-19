@@ -1,0 +1,28 @@
+{
+  "name": "project-08-stock-analyzer",
+  "version": "1.0.0",
+  "description": "Web tool to compare stock data",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "keywords": [
+    "stock",
+    "compare",
+    "financial"
+  ],
+  "author": "Travis Frazier",
+  "license": "MIT",
+  "proxy": "http://localhost:3000",
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
